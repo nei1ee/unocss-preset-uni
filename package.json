@@ -56,7 +56,7 @@
   "types": "index.d.ts",
   "files": [
     "dist",
-    "*.css"
+    "*.d.ts"
   ],
   "scripts": {
     "build": "unbuild",
