@@ -44,11 +44,16 @@
       "require": "./dist/vite.cjs",
       "import": "./dist/vite.mjs"
     },
+    "./process": {
+      "types": "./dist/process.d.ts",
+      "require": "./dist/process.cjs",
+      "import": "./dist/process.mjs"
+    },
     "./*": "./*"
   },
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "types": "index.d.ts",
   "files": [
     "dist",
     "*.css"

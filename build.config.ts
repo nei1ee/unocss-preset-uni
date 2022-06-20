@@ -7,6 +7,7 @@ export default defineBuildConfig({
     'src/utils',
     'src/colors',
     'src/vite',
+    'src/process',
   ],
   clean: true,
   declaration: true,
