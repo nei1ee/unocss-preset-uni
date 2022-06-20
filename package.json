@@ -1,0 +1,65 @@
+{
+  "name": "preset-uni",
+  "version": "0.0.1",
+  "description": "UnoCSS preset for uni-app",
+  "author": "zguolee",
+  "license": "MIT",
+  "homepage": "https://github.com/zguolee/preset-uni/tree/main/#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zguolee/preset-uni"
+  },
+  "bugs": {
+    "url": "https://github.com/zguolee/preset-uni/issues"
+  },
+  "keywords": [
+    "unocss",
+    "unocss-preset",
+    "uni-app"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    },
+    "./theme": {
+      "types": "./dist/theme.d.ts",
+      "require": "./dist/theme.cjs",
+      "import": "./dist/theme.mjs"
+    },
+    "./colors": {
+      "types": "./dist/colors.d.ts",
+      "require": "./dist/colors.cjs",
+      "import": "./dist/colors.mjs"
+    },
+    "./utils": {
+      "types": "./dist/utils.d.ts",
+      "require": "./dist/utils.cjs",
+      "import": "./dist/utils.mjs"
+    },
+    "./*": "./*"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "*.css"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "stub": "unbuild --stub",
+    "release": "bumpp --commit --push --tag && pnpm publish"
+  },
+  "dependencies": {
+    "@unocss/core": "0.39.3",
+    "@unocss/preset-mini": "0.39.3",
+    "@unocss/preset-wind": "0.39.3"
+  },
+  "devDependencies": {
+    "bumpp": "^8.2.1",
+    "unbuild": "^0.7.4"
+  }
+}
