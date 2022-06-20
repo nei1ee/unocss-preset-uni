@@ -6,10 +6,14 @@ export default defineBuildConfig({
     'src/theme',
     'src/utils',
     'src/colors',
+    'src/vite',
   ],
   clean: true,
   declaration: true,
   rollup: {
     emitCJS: true,
   },
+  externals: [
+    'vite',
+  ],
 })

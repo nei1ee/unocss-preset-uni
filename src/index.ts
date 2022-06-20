@@ -1,6 +1,7 @@
 import type { Preset } from '@unocss/core'
 import type { PresetMiniOptions, Theme } from '@unocss/preset-mini'
 import { rules, shortcuts, theme, variants } from '@unocss/preset-wind'
+import { unoCSSToUniProcess } from './precess'
 import { preflights } from './preflights'
 import { variantColorMix } from './variants/mix'
 
@@ -23,6 +24,10 @@ export const presetUni = (options: PresetUnoOptions = {}): Preset<Theme> => {
     ],
     options,
     preflights,
+    postprocess: t => ({
+      ...t,
+      selector: unoCSSToUniProcess(t.selector),
+    }),
   }
 }
 

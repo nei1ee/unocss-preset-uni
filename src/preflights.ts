@@ -1,6 +1,6 @@
 import type { Preflight, PreflightContext } from '@unocss/core'
 import { entriesToCss } from '@unocss/core'
-import type { Theme } from './theme'
+import type { Theme } from '@unocss/preset-mini'
 
 export const preflights: Preflight[] = [
   {

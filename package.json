@@ -39,6 +39,11 @@
       "require": "./dist/utils.cjs",
       "import": "./dist/utils.mjs"
     },
+    "./vite": {
+      "types": "./dist/vite.d.ts",
+      "require": "./dist/vite.cjs",
+      "import": "./dist/vite.mjs"
+    },
     "./*": "./*"
   },
   "main": "dist/index.cjs",
@@ -56,10 +61,15 @@
   "dependencies": {
     "@unocss/core": "0.39.3",
     "@unocss/preset-mini": "0.39.3",
-    "@unocss/preset-wind": "0.39.3"
+    "@unocss/preset-wind": "0.39.3",
+    "@vue/compiler-sfc": "^3.2.37",
+    "magic-string": "^0.26.2"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^0.25.1",
     "bumpp": "^8.2.1",
-    "unbuild": "^0.7.4"
+    "eslint": "^8.18.0",
+    "unbuild": "^0.7.4",
+    "vite": "^2.9.12"
   }
 }
