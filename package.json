@@ -1,0 +1,81 @@
+{
+  "name": "preset-uni",
+  "version": "0.0.8",
+  "description": "UnoCSS preset for uni-app",
+  "author": "zguolee",
+  "license": "MIT",
+  "homepage": "https://github.com/zguolee/preset-uni/tree/main/#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zguolee/preset-uni"
+  },
+  "bugs": {
+    "url": "https://github.com/zguolee/preset-uni/issues"
+  },
+  "keywords": [
+    "unocss",
+    "unocss-preset",
+    "uni-app"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    },
+    "./theme": {
+      "types": "./dist/theme.d.ts",
+      "require": "./dist/theme.cjs",
+      "import": "./dist/theme.mjs"
+    },
+    "./colors": {
+      "types": "./dist/colors.d.ts",
+      "require": "./dist/colors.cjs",
+      "import": "./dist/colors.mjs"
+    },
+    "./utils": {
+      "types": "./dist/utils.d.ts",
+      "require": "./dist/utils.cjs",
+      "import": "./dist/utils.mjs"
+    },
+    "./vite": {
+      "types": "./dist/vite.d.ts",
+      "require": "./dist/vite.cjs",
+      "import": "./dist/vite.mjs"
+    },
+    "./process": {
+      "types": "./dist/process.d.ts",
+      "require": "./dist/process.cjs",
+      "import": "./dist/process.mjs"
+    },
+    "./*": "./*"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "index.d.ts",
+  "files": [
+    "dist",
+    "*.d.ts"
+  ],
+  "scripts": {
+    "play": "vite playground",
+    "build": "unbuild",
+    "stub": "unbuild --stub",
+    "release": "bumpp --commit --push --tag && pnpm publish"
+  },
+  "dependencies": {
+    "@unocss/core": "0.44.2",
+    "@unocss/preset-mini": "0.44.2",
+    "@unocss/preset-wind": "0.44.2",
+    "@vue/compiler-sfc": "^3.2.37",
+    "magic-string": "^0.26.2"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.25.2",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.19.0",
+    "unbuild": "^0.7.4",
+    "vite": "^3.0.0"
+  }
+}
