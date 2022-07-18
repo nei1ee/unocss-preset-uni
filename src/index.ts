@@ -24,11 +24,10 @@ export const presetUni = (options: PresetUnoOptions = {}): Preset<Theme> => {
     ],
     options,
     preflights,
-    postprocess: (t) => {
-      t.selector = unoCSSToUniProcess(t.selector)
-      return t
+    postprocess: (util) => {
+      util.selector = unoCSSToUniProcess(util.selector)
+      return util
     },
   }
 }
 
-export default presetUni
