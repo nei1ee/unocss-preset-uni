@@ -1,8 +1,8 @@
 # preset-uni
 
-The `UniApp` preset for [UnoCSS](https://github.com/unocss/unocss), fork from [@unocss/preset-uno](https://github.com/unocss/unocss/tree/main/packages/preset-uno) and modified to adapt to the uni-app miniprogram.
+[![Version](https://img.shields.io/npm/v/preset-uni.svg?style=flat-square&logo=npm) ![Downloads](https://img.shields.io/npm/dm/preset-uni.svg?style=flat-square&logo=npm)](https://www.npmjs.com/package/preset-uni)
 
-> Please note that this preset is more like a playground at the current stage to experiment with the possibility of UnoCSS and also as a reference for making a custom preset. It does NOT follow semver and subjects to changes without further notice. We don't recommend using it on serious works. Use custom rules instead to ensure a stable outcome.
+The `UniApp` preset for [UnoCSS](https://github.com/unocss/unocss), fork from [@unocss/preset-uno](https://github.com/unocss/unocss/tree/main/packages/preset-uno) and modified to adapt to the uni-app miniprogram.
 
 ## Installation
 
