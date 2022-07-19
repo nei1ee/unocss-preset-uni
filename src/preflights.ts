@@ -7,7 +7,7 @@ export const preflights: Preflight[] = [
     layer: 'preflights',
     getCSS(ctx: PreflightContext<Theme>) {
       if (ctx.theme.preflightBase)
-        return `page{${entriesToCss(Object.entries(ctx.theme.preflightBase))}}`
+        return `page,::before,::after{${entriesToCss(Object.entries(ctx.theme.preflightBase))}}`
     },
   },
 ]

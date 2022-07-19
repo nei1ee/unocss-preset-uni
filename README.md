@@ -57,7 +57,7 @@ For more details about the default preset, you can check out our [playground](ht
 
 | form | to      | sample                 |
 | ---- | ------- | ---------------------- |
-| [`*,::before,::after`](https://github.com/unocss/unocss/blob/main/packages/preset-mini/src/preflights.ts) | [`page`](./src/preflights.ts) | - |
+| [`*,::before,::after`](https://github.com/unocss/unocss/blob/main/packages/preset-mini/src/preflights.ts) | [`page,::before,::after`](./src/preflights.ts) | - |
 | `\.` | `-point-` | `p-0.5` -> `p-0-point-5` |
 | `\/` | `-div-` | `p-1/2` -> `p-1-div-2` |
 | `\:` | `-c-` | `dark:text-green-500` -> `dark-c-text-green-500` |
