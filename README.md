@@ -1,13 +1,13 @@
-# preset-uni
+# unocss-preset-uni
 
-[![Version](https://img.shields.io/npm/v/preset-uni.svg?style=flat-square&logo=npm) ![Downloads](https://img.shields.io/npm/dm/preset-uni.svg?style=flat-square&logo=npm)](https://www.npmjs.com/package/preset-uni)
+[![Version](https://img.shields.io/npm/v/unocss-preset-uni.svg?style=flat-square&logo=npm) ![Downloads](https://img.shields.io/npm/dm/preset-uni.svg?style=flat-square&logo=npm)](https://www.npmjs.com/package/unocss-preset-uni)
 
 The `UniApp` preset for [UnoCSS](https://github.com/unocss/unocss), fork from [@unocss/preset-uno](https://github.com/unocss/unocss/tree/main/packages/preset-uno) and modified to adapt to the uni-app miniprogram.
 
 ## Installation
 
 ```bash
-npm i -D preset-uni
+npm i -D unocss-preset-uni
 ```
 
 ```ts
@@ -16,8 +16,8 @@ import vue from '@vitejs/plugin-vue'
 import Unocss from 'unocss/vite'
 import { presetIcons } from 'unocss'
 
-import { presetUni } from 'preset-uni'
-import { UnoCSSToUni } from 'preset-uni/vite'
+import { presetUni } from 'unocss-preset-uni'
+import { UnoCSSToUni } from 'unocss-preset-uni/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({

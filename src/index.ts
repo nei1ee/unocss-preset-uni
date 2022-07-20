@@ -14,7 +14,7 @@ export const presetUni = (options: PresetUnoOptions = {}): Preset<Theme> => {
   options.attributifyPseudo = options.attributifyPseudo ?? false
 
   return {
-    name: 'preset-uni',
+    name: 'unocss-preset-uni',
     theme,
     rules,
     shortcuts,

@@ -31,9 +31,9 @@ importers:
     specifiers:
       '@iconify-json/carbon': ^1.1.6
       '@vitejs/plugin-vue': ^3.0.0
-      preset-uni: workspace:*
       typescript: ^4.7.4
       unocss: ^0.44.2
+      unocss-preset-uni: workspace:*
       vite-plugin-inspect: ^0.6.0
       vue: ^3.2.37
       vue-tsc: ^0.38.5
@@ -42,9 +42,9 @@ importers:
     devDependencies:
       '@iconify-json/carbon': 1.1.6
       '@vitejs/plugin-vue': 3.0.0_vite@3.0.0+vue@3.2.37
-      preset-uni: link:..
       typescript: 4.7.4
       unocss: 0.44.2_vite@3.0.0
+      unocss-preset-uni: link:..
       vite-plugin-inspect: 0.6.0_vite@3.0.0
       vue-tsc: 0.38.5_typescript@4.7.4
 

@@ -1,16 +1,16 @@
 {
-  "name": "preset-uni",
+  "name": "unocss-preset-uni",
   "version": "0.1.3",
   "description": "UnoCSS preset for uni-app",
   "author": "zguolee",
   "license": "MIT",
-  "homepage": "https://github.com/zguolee/preset-uni/tree/main/#readme",
+  "homepage": "https://github.com/zguolee/unocss-preset-uni/tree/main/#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zguolee/preset-uni"
+    "url": "https://github.com/zguolee/unocss-preset-uni"
   },
   "bugs": {
-    "url": "https://github.com/zguolee/preset-uni/issues"
+    "url": "https://github.com/zguolee/unocss-preset-uni/issues"
   },
   "keywords": [
     "unocss",
