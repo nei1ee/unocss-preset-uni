@@ -1,12 +1,8 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import Inspect from 'vite-plugin-inspect'
-import Unocss from 'unocss/vite'
-import {
-  presetIcons,
-  transformerDirectives,
-  transformerVariantGroup,
-} from 'unocss'
+import UnoCSS from 'unocss/vite'
+
 import { presetUni } from 'unocss-preset-uni'
 import { UnoCSSToUni } from 'unocss-preset-uni/vite'
 
@@ -14,15 +10,11 @@ import { UnoCSSToUni } from 'unocss-preset-uni/vite'
 export default defineConfig({
   plugins: [
     vue(),
-    Unocss({
+    UnoCSS({
       presets: [
         // presetUno(),
         presetUni(),
-        presetIcons(),
-      ],
-      transformers: [
-        transformerDirectives(),
-        transformerVariantGroup(),
+        // ...
       ],
     }),
     UnoCSSToUni(),

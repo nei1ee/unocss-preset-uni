@@ -24,5 +24,8 @@
     <div class="m-0.5 p-1 text-2xl" :class="true ? '' : 'text-yellow-500 p-2.5'">
       abckefghijklmnopqrstuvwxyz
     </div>
+    <div class=":uno: text-red">
+      transformerCompileClass
+    </div>
   </div>
 </template>

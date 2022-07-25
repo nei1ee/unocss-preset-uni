@@ -2,7 +2,7 @@ export function unoCSSToUniProcess(str: string) {
   // dot
   if (str.includes('\.'))
     str = str.replace(/\\\./g, '-point-')
-  // // div
+  // div
   if (str.includes('\/'))
     str = str.replace(/\\\//g, '-div-')
   // colon
