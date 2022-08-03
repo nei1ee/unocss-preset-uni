@@ -7,7 +7,9 @@
   <div class="flex flex-col justify-center items-center">
     <div class="text-green-500 text-2xl rotate-180 i-carbon-campsite" />
     <div class="border bg-blue-200 px-2 transition-all !bg-red-500">
-      0123456789
+      <div class="text-green-200/50">
+        0123456789
+      </div>
     </div>
     <div class="p-1" :class="true ? 'text-yellow-500' : ''">
       abckefghijklmnopqrstuvwxyz
@@ -16,10 +18,10 @@
       py-3.5
     </div>
     <p
-      class="font-medium text-xs p-2.5"
-      :class="1 ? 'text-10px leading-tight p-2.5' : 'm-3.5'"
+      class="font-medium text-xs"
+      :class="1 ? 'text-10px leading-tight p-1/6' : 'm-3.5'"
     >
-      p-2.5
+      p-2/5
     </p>
     <div class="m-0.5 p-1 text-2xl" :class="true ? '' : 'text-yellow-500 p-2.5'">
       abckefghijklmnopqrstuvwxyz

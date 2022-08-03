@@ -57,7 +57,7 @@ function escapeCharacter(originStr: string, targetStr: string) {
 }
 
 // Regular expression of characters to be escaped
-const charReg = /[.:%!#()[\],]/
+const charReg = /[.:%!#()[\/\],]/
 
 /**
  * Handling `class` and `:class`
