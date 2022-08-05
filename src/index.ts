@@ -29,7 +29,7 @@ export const presetUni = (options: PresetUnoOptions = {}): Preset<Theme> => {
       return util
     },
     prefix: options.prefix,
-  }
+  } as Preset
 }
 
 export default presetUni

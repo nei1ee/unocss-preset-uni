@@ -60,19 +60,21 @@ function escapeCharacter(originStr: string, targetStr: string) {
 const charReg = /[.:%!#()[\/\],]/
 
 /**
- * Handling `class` and `:class`
+ * Handling `class`, `:class`, `hover-class` and `:hover-class`
  * @param code Raw string
  * @returns Processed string
  */
 export function classProcess(code: string) {
   let strTemp = code
-  const classMatches = code.match(/:?class=\".*?\"/g)
+  const classMatches = code.match(/:?(hover-)?class=\".*?\"/g)
   if (classMatches?.length) {
     classMatches.forEach((classMatch) => {
-      if (classMatch.startsWith('class') && charReg.test(classMatch)) {
+      if (!charReg.test(classMatch))
+        return
+      if (classMatch.startsWith('class') || classMatch.startsWith('hover-class')) {
         strTemp = escapeCharacter(strTemp, classMatch)
       }
-      else if (classMatch.startsWith(':class')) {
+      else if (classMatch.startsWith(':class') || classMatch.startsWith(':hover-class')) {
         const reactiveClassMatches = classMatch.match(/'.*?'/g)
         if (reactiveClassMatches?.length) {
           reactiveClassMatches.forEach((reactiveClassMatch) => {

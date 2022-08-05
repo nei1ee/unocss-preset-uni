@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import Inspect from 'vite-plugin-inspect'
 
+import type { Preset } from 'unocss'
 import { presetIcons } from 'unocss'
 import UnoCSS from 'unocss/vite'
 
@@ -15,7 +16,7 @@ export default defineConfig({
     UnoCSS({
       presets: [
         // presetUno(),
-        presetUni(),
+        presetUni() as Preset,
         presetIcons(),
         // ...
       ],

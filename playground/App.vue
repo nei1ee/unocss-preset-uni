@@ -17,6 +17,9 @@
     <div class="bg-[hsl(2.7,81.9%,69.6%)] py-3.5 grid-cols-[0.7fr_repeat(7,1fr)]">
       py-3.5
     </div>
+    <div hover-class="text-green-500/50">
+      uniapp
+    </div>
     <div class="m-0.5 p-1 text-2xl" :class="true ? '' : 'text-yellow-500 p-2.5'">
       abckefghijklmnopqrstuvwxyz
     </div>
