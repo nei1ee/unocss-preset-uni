@@ -2,6 +2,10 @@
 
 [![Version](https://img.shields.io/npm/v/unocss-preset-uni.svg?style=flat-square&logo=npm) ![Downloads](https://img.shields.io/npm/dm/preset-uni.svg?style=flat-square&logo=npm)](https://www.npmjs.com/package/unocss-preset-uni)
 
+:warning: `unocss-preset-uni` has been migrated to `unocss-applet` and fixed the existing issues, maybe you can use [unocss-applet](https://github.com/unocss-applet/unocss-applet). There are many problems in this `unocss-preset-uni` and may not be maintained in the future. 
+
+<br>
+
 The `UniApp` preset for [UnoCSS](https://github.com/unocss/unocss), fork from [@unocss/preset-uno](https://github.com/unocss/unocss/tree/main/packages/preset-uno) and modified to transform some CSS selector that mini-program can't use.
 
 ## Installation
@@ -37,6 +41,11 @@ export default defineConfig({
   ],
 })
 ```
+
+## TODO
+- [ ] parse string in `TS` file.
+- [ ] parse string in `<script></script>`.
+- [ ] type error.
 
 ## Change
 
